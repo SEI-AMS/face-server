@@ -1,0 +1,7 @@
+cmake .
+make
+
+./FaceRec at_test.txt name_map.txt
+
+LD_LIBRARY_PATH=/home/ben/Desktop/ams/git/opencv/lib:$LD_LIBRARY_PATH
+

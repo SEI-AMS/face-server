@@ -1,7 +1,20 @@
+First opencv needs to be installed (instructions in http://docs.opencv.org/doc/tutorials/introduction/linux_install/linux_install.html)
+
+1. Download an unzip the latest opencv lib
+2. Execute cmake (it can be installed with apt-get if it is not) to create the makefiles. Assuming you are inside the unzipped folder:
+    mkdir release
+    cd release
+    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+3. Compile opencv (it can take a while)
+    make
+4. Install opencv to the system default lib folders, so it will be found when compiling and linking
+    sudo make install
+
+To build the face server, from inside its folder, execute:
+
 cmake .
 make
 
+To run it:
+
 ./FaceRec at_test.txt name_map.txt
-
-LD_LIBRARY_PATH=/home/ben/Desktop/ams/git/opencv/lib:$LD_LIBRARY_PATH
-

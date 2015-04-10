@@ -1,20 +1,31 @@
-First opencv needs to be installed (instructions in http://docs.opencv.org/doc/tutorials/introduction/linux_install/linux_install.html)
+To compile this project:
 
-1. Download an unzip the latest opencv lib
-2. Execute cmake (it can be installed with apt-get if it is not) to create the makefiles. Assuming you are inside the unzipped folder:
-    mkdir release
-    cd release
-    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
-3. Compile opencv (it can take a while)
-    make
-4. Install opencv to the system default lib folders, so it will be found when compiling and linking
-    sudo make install
+    First opencv needs to be installed (instructions in http://docs.opencv.org/doc/tutorials/introduction/linux_install/linux_install.html)
 
-To build the face server, from inside its folder, execute:
+        1. Download an unzip the latest opencv lib
+        2. Execute cmake (it can be installed with apt-get if it is not) to create the makefiles. Assuming you are inside the unzipped folder:
+            mkdir release
+            cd release
+            cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+        3. Compile opencv (it can take a while)
+            make
+        4. Install opencv to the system default lib folders, so it will be found when compiling and linking
+            sudo make install
 
-cmake .
-make
+    To build the face server, from inside its folder, execute:
+
+        cmake .
+        make
 
 To run it:
 
-./FaceRec at_test.txt name_map.txt
+    ./FaceRec at_test.txt name_map.txt
+
+    or call run.sh
+
+To set it up as a service:
+
+    1. Run make_dist.sh to create a distributable folder.
+    2. Copy the contents of the ./dist folder to a folder called /home/cloudlet/face_server in the target VM.
+    3. Copy the face_server.conf file present in there to the /etc/init/ folder
+    4. Execute "sudo start face_server" to manually start the service (it will autostart if the machine is rebooted)

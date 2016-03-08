@@ -1,1 +1,1 @@
-/home/ben/Desktop/face_2/CMakeFiles/FaceRec.dir
+/Users/keegan/Documents/ams/cloudlet/face-server/CMakeFiles/FaceRec.dir

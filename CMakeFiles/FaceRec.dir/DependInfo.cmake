@@ -1,14 +1,23 @@
 # The set of languages for which implicit dependencies are needed:
-SET(CMAKE_DEPENDS_LANGUAGES
+set(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
-SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ben/Desktop/face_2/PracticalSocket.cpp" "/home/ben/Desktop/face_2/CMakeFiles/FaceRec.dir/PracticalSocket.cpp.o"
-  "/home/ben/Desktop/face_2/face_server.cpp" "/home/ben/Desktop/face_2/CMakeFiles/FaceRec.dir/face_server.cpp.o"
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/keegan/Documents/ams/cloudlet/face-server/PracticalSocket.cpp" "/Users/keegan/Documents/ams/cloudlet/face-server/CMakeFiles/FaceRec.dir/PracticalSocket.cpp.o"
+  "/Users/keegan/Documents/ams/cloudlet/face-server/face_server.cpp" "/Users/keegan/Documents/ams/cloudlet/face-server/CMakeFiles/FaceRec.dir/face_server.cpp.o"
   )
-SET(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/include/opencv"
+  "/usr/local/include"
+  )
 
 # Targets to which this target links.
-SET(CMAKE_TARGET_LINKED_INFO_FILES
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

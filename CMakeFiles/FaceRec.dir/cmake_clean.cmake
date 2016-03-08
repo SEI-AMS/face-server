@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/FaceRec.dir/face_server.cpp.o"
   "CMakeFiles/FaceRec.dir/PracticalSocket.cpp.o"
   "FaceRec.pdb"
@@ -6,6 +6,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/FaceRec.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/FaceRec.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
